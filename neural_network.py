@@ -85,3 +85,9 @@ batch, h_in, h_out = 10, 3, 2
 
 x = np.random.rand(batch, h_in)
 y = np.random.rand(batch, h_out)
+
+nn = NeuralNetwork(input_size=3, output_size=2, lr=0.5)
+nn.add_layer(2)
+nn.add_layer(4)
+nn.add_layer(3)
+nn.train(x,y)
